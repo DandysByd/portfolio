@@ -1,0 +1,78 @@
+@import "https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300&display=swap";
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+}
+
+.navigation {
+  height: 60vh;
+  color: #dfe0df;
+  display: flex;
+}
+
+.navigation nav {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.navigation__header {
+  width: 66%;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 100%, 0 86%, 0% 50%);
+  background-color: #ba6e2e;
+}
+
+.navigation__name {
+  color: #402e32;
+  font-size: 2em;
+}
+
+.navigation__list {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation__list li {
+  margin-right: 15px;
+  font-size: 1.5em;
+}
+
+.navigation__list li a {
+  color: #dfe0df;
+  text-decoration: none;
+}
+
+.navigation .socials {
+  width: 33%;
+  display: flex;
+}
+
+.navigation .socials__list {
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0;
+  display: flex;
+}
+
+.navigation .socials__list img {
+  height: 2.5em;
+}
+
+.navigation .socials__list img:hover {
+  scale: 1.5;
+}
+
+.navigation .about-me {
+  width: 60%;
+  margin: 6vh auto auto;
+}
+
+.navigation .about-me p {
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=index.47ca9330.css.map */
