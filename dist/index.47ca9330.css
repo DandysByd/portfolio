@@ -13,7 +13,6 @@ body {
 }
 
 .navigation {
-  height: 60vh;
   color: #dfe0df;
   display: flex;
 }
@@ -109,7 +108,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 35vh;
+  margin-top: 20vh;
   display: flex;
 }
 
@@ -237,6 +236,22 @@ footer a {
     clip-path: none;
   }
 
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me__image {
+    margin-top: 2%;
+  }
+
+  .about-me .image__me {
+    width: 100%;
+  }
+
+  .about-me__text {
+    width: 80% !important;
+  }
+
   .my-work {
     flex-direction: column;
   }
@@ -244,6 +259,10 @@ footer a {
   .my-work__single {
     width: 100%;
     margin-top: 2%;
+  }
+
+  .contact {
+    width: auto;
   }
 }
 

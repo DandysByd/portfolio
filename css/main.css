@@ -13,7 +13,6 @@ body {
 }
 
 .navigation {
-  height: 60vh;
   color: #DFE0DF;
   display: flex;
 }
@@ -91,7 +90,7 @@ body {
 }
 
 .work-wrapper {
-  margin-top: 35vh;
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
   background-color: rgba(149, 90, 42, 0.6705882353);
@@ -207,12 +206,27 @@ footer a {
     width: 100%;
     clip-path: none;
   }
+  .about-me {
+    flex-direction: column;
+  }
+  .about-me__image {
+    margin-top: 2%;
+  }
+  .about-me .image__me {
+    width: 100%;
+  }
+  .about-me__text {
+    width: 80% !important;
+  }
   .my-work {
     flex-direction: column;
   }
   .my-work__single {
     width: 100%;
     margin-top: 2%;
+  }
+  .contact {
+    width: auto;
   }
 }
 
