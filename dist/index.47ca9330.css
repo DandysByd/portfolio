@@ -223,4 +223,15 @@ footer a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation__header {
+    width: 100%;
+    clip-path: none;
+  }
+}
+
 /*# sourceMappingURL=index.47ca9330.css.map */

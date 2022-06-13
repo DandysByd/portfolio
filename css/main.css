@@ -196,4 +196,14 @@ footer a {
   color: #DFE0DF;
 }
 
+@media only screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+  }
+  .navigation__header {
+    width: 100%;
+    clip-path: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

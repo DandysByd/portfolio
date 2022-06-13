@@ -236,3 +236,13 @@ footer{
         color: $fontColor;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .navigation{
+        flex-direction: column;
+        &__header{
+            width: 100%;
+            clip-path: none;
+        }
+    }
+  }
