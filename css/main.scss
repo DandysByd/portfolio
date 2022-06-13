@@ -262,6 +262,8 @@ footer{
     }
     .my-work{
         flex-direction: column;
+        width: 90%;
+
         &__single{
             width: 100%;
             margin-top: 2%;
@@ -269,6 +271,19 @@ footer{
     }
     .contact{
         width: auto;
+        &__wrapper{
+            width: 90%;
+            padding-bottom: 60px;
+            
+            button{
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 90%;
+            }
+        }
+        &__form{
+            display: flex;
+        }
     }
     nav{
         margin-top: 20px;

@@ -253,6 +253,7 @@ footer a {
   }
 
   .my-work {
+    width: 90%;
     flex-direction: column;
   }
 
@@ -263,6 +264,21 @@ footer a {
 
   .contact {
     width: auto;
+  }
+
+  .contact__wrapper {
+    width: 90%;
+    padding-bottom: 60px;
+  }
+
+  .contact__wrapper button {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .contact__form {
+    display: flex;
   }
 
   nav {
