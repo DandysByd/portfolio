@@ -200,9 +200,19 @@ footer a {
   .navigation {
     flex-direction: column;
   }
+  .navigation .socials {
+    width: auto;
+  }
   .navigation__header {
     width: 100%;
     clip-path: none;
+  }
+  .my-work {
+    flex-direction: column;
+  }
+  .my-work__single {
+    width: 100%;
+    margin-top: 2%;
   }
 }
 

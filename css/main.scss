@@ -240,9 +240,22 @@ footer{
 @media only screen and (max-width: 768px) {
     .navigation{
         flex-direction: column;
+        .socials{
+            width: auto
+        }
         &__header{
             width: 100%;
             clip-path: none;
         }
+    }
+    .my-work{
+        flex-direction: column;
+        &__single{
+            width: 100%;
+            margin-top: 2%;
+        }
+    }
+    .skills{
+
     }
   }
