@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
-  margin: 0;
+  margin: 0px;
   font-weight: 600;
+  background-color: #402E32;
+  overflow-x: hidden;
 }
 
 .navigation {
@@ -16,9 +22,10 @@ body {
   justify-content: space-evenly;
 }
 .navigation__header {
-  background-color: #BA6E2E;
+  background-color: #a56027;
   width: 66%;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 100%, 0 86%, 0% 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+  z-index: 1;
 }
 .navigation__name {
   font-size: 2em;
@@ -42,6 +49,7 @@ body {
 .navigation .socials {
   width: 33%;
   display: flex;
+  flex-direction: column;
 }
 .navigation .socials__list {
   width: 100%;
@@ -56,12 +64,99 @@ body {
   scale: 1.5;
 }
 .navigation .about-me {
+  display: flex;
+}
+.navigation .about-me__image {
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 84%);
+}
+.navigation .about-me__image__me {
+  width: 100%;
+}
+.navigation .about-me__text {
   width: 60%;
   margin: auto;
   margin-top: 6vh;
 }
-.navigation .about-me p {
+.navigation .about-me__text p {
   font-size: 1.1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.work-wrapper {
+  margin-top: 35vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-work {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.my-work a {
+  text-decoration: none;
+}
+.my-work__single {
+  width: 28%;
+  background-color: rgb(57, 35, 40);
+}
+.my-work__single:hover {
+  background-color: rgb(23, 10, 13);
+}
+.my-work__single p,
+.my-work__single h2 {
+  color: #DFE0DF;
+}
+.my-work__single img {
+  width: 100%;
+}
+.my-work__header {
+  color: #DFE0DF;
+}
+.my-work--light {
+  border: 1px solid rgb(89, 65, 65);
+}
+.my-work--dark {
+  border: 1px solid rgb(19, 13, 13);
+}
+
+.journey {
+  width: 60%;
+  margin-top: 20vh;
+}
+.journey .my-journey__text {
+  color: #DFE0DF;
+}
+.journey .my-journey__header {
+  color: #DFE0DF;
+}
+
+.skills {
+  margin-top: 20vh;
+}
+.skills img {
+  width: 10%;
+}
+.skills__header {
+  margin-bottom: 2vh;
+  color: #DFE0DF;
+}
+
+.contact {
+  margin-top: 20vh;
+}
+.contact__header {
+  color: #DFE0DF;
 }
 
 /*# sourceMappingURL=main.css.map */

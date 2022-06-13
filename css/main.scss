@@ -1,70 +1,189 @@
-$primaryColor : #BA6E2E;
+$primaryColor : #a56027;
 $secondaryColor : #402E32;
 $fontColor : #DFE0DF;
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    margin: 0;
+    margin: 0px;
     font-weight: 600;
+    background-color: $secondaryColor;
+    overflow-x: hidden;
 }
 
 .navigation {
     height: 60vh;
     color: $fontColor;
     display: flex;
-    nav{
+
+    nav {
         display: flex;
         justify-content: space-evenly;
     }
+
     &__header {
         background-color: $primaryColor;
         width: 66%;
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 100%, 0 86%, 0% 50%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+        z-index: 1;
     }
-    &__name{
+
+    &__name {
         font-size: 2em;
         color: $secondaryColor;
     }
-    &__list{
+
+    &__list {
         padding: 0;
         display: flex;
         align-items: center;
         margin: 0;
         list-style-type: none;
-        li{
+
+        li {
             margin-right: 15px;
             font-size: 1.5em;
-            a{
+
+            a {
                 color: $fontColor;
                 text-decoration: none;
             }
         }
     }
-    .socials{
+
+    .socials {
         width: 33%;
         display: flex;
-        &__list{
+        flex-direction: column;
+
+        &__list {
             width: 100%;
             padding: 0;
             display: flex;
             justify-content: space-evenly;
-            img{
+
+            img {
                 height: 2.5em;
-                &:hover{
+
+                &:hover {
                     scale: 1.5;
                 }
             }
 
         }
     }
-    .about-me{
-        width: 60%;
-        margin:auto;
-        margin-top: 6vh;
-        p{
-            font-size: 1.1em;
+
+    .about-me {
+        display: flex;
+
+        &__image {
+            z-index: 2;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 84%);
+
+            &__me {
+                width: 100%;
+            }
         }
+
+        &__text {
+            width: 60%;
+            margin: auto;
+            margin-top: 6vh;
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.work-wrapper{
+    margin-top: 35vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.my-work {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+    }
+
+    &__single {
+        width: 28%;
+        background-color: rgb(57, 35, 40);
+
+        &:hover {
+            background-color: rgb(23, 10, 13);
+        }
+
+        p,
+        h2 {
+            color: $fontColor;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__header {
+        color: $fontColor;
+    }
+
+    &--light {
+        border: 1px solid rgb(89, 65, 65);
+    }
+
+    &--dark {
+        border: 1px solid rgb(19, 13, 13);
+    }
+}
+
+.journey {
+    width: 60%;
+    margin-top: 20vh;
+
+    .my-journey {
+        &__text {
+            color: $fontColor;
+        }
+
+        &__header {
+            color: $fontColor;
+        }
+    }
+
+}
+.skills{
+    margin-top: 20vh;
+    img{
+        width: 10%;
+    }
+    &__header{
+        margin-bottom: 2vh;
+        color: $fontColor;
+    }
+}
+.contact{
+    margin-top: 20vh;
+
+    &__header{
+        color: $fontColor;
     }
 }

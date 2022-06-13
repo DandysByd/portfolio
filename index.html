@@ -15,26 +15,118 @@
             <nav>
                 <h1 class="navigation__name">Daniel Bydžovský</h1>
                 <ul class="navigation__list">
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">My work</a></li>
-                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#journey">About me</a></li>
+                    <li><a href="#mywork">My work</a></li>
+                    <li><a href="#skills">My skills<a></li>
+                    <li><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
             <div class="about-me">
-                <p>My name is Daniel, I am frontend developer. I finished my study on High School of Electrical Engineering in
-                    Pardubice.
-                    After trying out different IT jobs, I realised making front-end is what makes me happy and fulfills
-                    me.
-                    This site was created to show off my skills and also to say something about myself.</p>
+                <div class="about-me__text">
+                    <p>My name is Daniel, I am frontend developer. I finished my study on High School of Electrical
+                        Engineering in
+                        Pardubice.
+                        After trying out different IT jobs, I realised making front-end is what makes me happy and
+                        fulfills
+                        me.
+                        This site was created to show off my skills and also to say something about myself.</p>
+                </div>
+                <div class="about-me__image">
+                    <img class="image__me" src="https://www.fillmurray.com/360/360">
+                </div>
             </div>
         </header>
         <div class="socials">
             <ul class="socials__list">
-                <li><a target="_blank" href="https://www.linkedin.com/in/daniel-bydžovský-782820110/"><img src="images/linkedin.png"
-                            alt="linkedin"></a></li>
-                <li><a target="_blank" href="https://www.fiverr.com/dandyys"><img src="images/fiverr.png" alt="fiverr"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/daniel-bydžovský-782820110/"><img
+                            src="images/linkedin.png" alt="linkedin"></a></li>
+                <li><a target="_blank" href="https://www.fiverr.com/dandyys"><img src="images/fiverr.png"
+                            alt="fiverr"></a></li>
                 <li><a href="#"><img src="images/email.png" alt="mail"></a></li>
             </ul>
+
+        </div>
+    </div>
+    <div class="content">
+        <div id="journey" class="journey">
+            <div class="my-journey">
+                <h1 class="my-journey__header">My journey</h1>
+                <p class="my-journey__text">
+                    I started working right after graduation. At first I was doing customer support in Decathlon
+                    Pardubice. After almost two years of monotnous work I got bored of and started looking for job in
+                    IT. Just in few weeks I found myself
+                    work in local company. I was setting up cameras on one purpose production lines, to recognize
+                    poorly made product. Eventually I was forced to leave due to big portion of travelling, required on
+                    this position.
+                    My next and to this day last job was EDI specialist. I was basically setting up everything for
+                    correct comunication between supplier and chain of stores in Czech republic.
+                </p>
+            </div>
+        </div>
+
+        <div id="mywork" class="work-wrapper">
+            <h1 class="my-work__header">My projects</h1>
+            <div class="my-work">
+                <div class="my-work__single">
+                    <div class="my-work--light">
+                        <a href="https://dandysbyd.github.io/bydza-beardies/">
+                            <img src="./images/pages/bbeardies.png" alt="bbeadries">
+                            <h2>Bydza beardies</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et nemo, ea officia
+                                dolorem
+                                dignissimos porro. </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-work__single">
+                    <div class="my-work--dark">
+                        <a href="https://dandysbyd.github.io/create-terra/">
+                            <img src="./images/pages/bterra.png" alt="ss">
+                            <h2>Create terra</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et nemo, ea officia
+                                dolorem
+                                dignissimos porro. </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-work__single">
+                    <div class="my-work--light">
+                        <a href="#">
+                            <img src="./images/pages/bbeardies.png" alt="sss">
+                            <h2>Homemade alexa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et nemo, ea officia
+                                dolorem
+                                dignissimos porro.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="skills" class="skills">
+            <h1 class="skills__header">What can I work with</h1>
+            <div>
+                <img src="./images/html.png" alt="html">
+                <img src="./images/css.png" alt="css">
+                <img src="./images/sass.png" alt="sass">
+                <img src="./images/js.png" alt="js">
+                <img src="./images/react.png" alt="react">
+                <img src="./images/git.png" alt="git">
+                <img src="./images/photoshop.png" alt="photoshop">
+                <img src="./images/xd.png" alt="xd">
+                <img src="./images/illustrator.png" alt="illustrator">
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <h1 class="contact__header">Contact me on <span>bydzak@gmail.com</span></h1>
+            <form action="https://formsubmit.co/11c5fd6fc88fe984073e0d1e302a1f08" method="POST">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <button type="submit">Send</button>
+           </form>
+         
         </div>
     </div>
 </body>
