@@ -3,9 +3,10 @@ $secondaryColor : #402E32;
 $fontColor : #DFE0DF;
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
@@ -85,16 +86,18 @@ body {
             clip-path: polygon(0 0, 100% 0, 100% 95%, 0 84%);
 
             &__me {
-                width: 100%;
+                width: 200px;
             }
         }
 
         &__text {
+            
             width: 60%;
             margin: auto;
             margin-top: 6vh;
 
             p {
+                margin: 10px;
                 font-size: 1.1em;
             }
         }
@@ -107,14 +110,18 @@ body {
     align-items: center;
     text-align: center;
 }
-.work-wrapper{
+
+.work-wrapper {
     margin-top: 35vh;
     display: flex;
     justify-content: center;
+    background-color: #955a2aab;
     flex-direction: column;
     align-items: center;
 }
+
 .my-work {
+    margin-bottom: 5%;
     width: 60%;
     display: flex;
     align-items: center;
@@ -136,9 +143,12 @@ body {
         h2 {
             color: $fontColor;
         }
-
+        p{
+            margin: 2%;
+        }
         img {
             width: 100%;
+            aspect-ratio: 1/0.6;
         }
     }
 
@@ -170,20 +180,59 @@ body {
     }
 
 }
-.skills{
+
+.skills {
     margin-top: 20vh;
-    img{
+
+    img {
         width: 10%;
     }
-    &__header{
+
+    &__header {
         margin-bottom: 2vh;
         color: $fontColor;
     }
 }
-.contact{
-    margin-top: 20vh;
 
-    &__header{
+.contact {
+    width: 40%;
+    margin-bottom: 2%;
+    
+    &__wrapper{
+        
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20vh;
+        margin-top: 20vh;
+        background-color: #955a2aab;
+        
+        width: 100%;
+    }
+    &__header {
+        color: $fontColor;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        input,textarea {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 2%;
+        }
+        button {
+            all: unset;
+            cursor: pointer;
+            background-color: $secondaryColor;
+            color: $fontColor;
+            font-size: 2em;
+          }
+    }
+}
+footer{
+    a{
+        text-decoration: none;
         color: $fontColor;
     }
 }

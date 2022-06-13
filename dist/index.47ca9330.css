@@ -84,7 +84,7 @@ body {
 }
 
 .navigation .about-me__image__me {
-  width: 100%;
+  width: 200px;
 }
 
 .navigation .about-me__text {
@@ -93,6 +93,7 @@ body {
 }
 
 .navigation .about-me__text p {
+  margin: 10px;
   font-size: 1.1em;
 }
 
@@ -104,6 +105,7 @@ body {
 }
 
 .work-wrapper {
+  background-color: #955a2aab;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -115,6 +117,7 @@ body {
   width: 60%;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 5%;
   display: flex;
 }
 
@@ -135,8 +138,13 @@ body {
   color: #dfe0df;
 }
 
+.my-work__single p {
+  margin: 2%;
+}
+
 .my-work__single img {
   width: 100%;
+  aspect-ratio: 1 / .6;
 }
 
 .my-work__header {
@@ -174,11 +182,45 @@ body {
 }
 
 .contact {
+  width: 40%;
+  margin-bottom: 2%;
+}
+
+.contact__wrapper {
+  width: 100%;
+  background-color: #955a2aab;
+  justify-content: center;
   margin-top: 20vh;
+  margin-bottom: 20vh;
+  display: flex;
 }
 
 .contact__header {
   color: #dfe0df;
+}
+
+.contact__form {
+  flex-direction: column;
+  display: flex;
+}
+
+.contact__form input, .contact__form textarea {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 1.5em;
+}
+
+.contact__form button {
+  all: unset;
+  cursor: pointer;
+  color: #dfe0df;
+  background-color: #402e32;
+  font-size: 2em;
+}
+
+footer a {
+  color: #dfe0df;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.47ca9330.css.map */
